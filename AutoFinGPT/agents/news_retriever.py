@@ -86,6 +86,7 @@ def scrape_rss():
                 print(f"{total} total | {added} new | ⏭ {skipped} skipped for {source}")
             except Exception as e:
                 print(f"Error fetching {source}: {e}")
+                
 #scheduler to extract data every 30 mins
 #     schedule.every(30).minutes.do(scrape_rss)
 
